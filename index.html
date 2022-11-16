@@ -17,43 +17,47 @@
         <footer>Photo by Hally West on Unsplash </footer>
     </aside>
     <main>
-        <p></p>
-        <p></p>
-        <section class="form-container">
+        <p>This is not a real online service! You know
+            you need something like this in your life to help you realize
+            your deepest dreams.
+         Sign up now to get started
+        </p>
+        <p id="catcher">You <em>know</em> you want to.</p>
+        <section class="form-section">
             <p>Let's do this!</p>
-            <form action="post">
+            <form action="post" id="submit">
                <div class="item">
-                   <label for="name">FIRST NAME</label>
-                   <input type="text" name="name" id="name">
+                   <label for="name">FIRST NAME (*)</label>
+                   <input type="text" name="name" id="name" required  maxlength="20">
                </div>
                <div class="item">
-                   <label for="lastname">LAST NAME</label>
-                   <input type="text" name="lastname" id="lastname">
+                   <label for="lastname">LAST NAME (*)</label>
+                   <input type="text" name="lastname" id="lastname" required   maxlength="20">
                </div>
                <div class="item">
-                   <label for="email">EMAIL</label>
-                   <input type="email" name="email" id="email">
+                   <label for="email">EMAIL (*)</label>
+                   <input type="email" name="email" id="email" required >
                </div>
                <div class="item">
                    <label for="phone">PHONE NUMBER</label>
-                   <input type="tel" name="phone" id="phone">
+                   <input type="tel" name="phone" id="phone"  minlength="6"  maxlength="11">
                </div>
                <div class="item">
-                   <label for="password">PASSWORD</label>
-                   <input type="password" name="password" id="password">
+                   <label for="password">PASSWORD </label>
+                   <input type="password" name="password" id="password" required>
                </div>
                <div class="item">
-                   <label for="cpassword">CONFIRM PASSWORD</label>
-                   <input type="password" name="cpassword" id="cpassword">
+                   <label for="cpassword">CONFIRM PASSWORD </label>
+                   <input type="password" name="cpassword" id="cpassword" required>
                </div>
 
             </form>
         </section>
-        <button>Create Account</button>
+        <button type="submit" form="submit" id="submitBtn">Create Account</button>
 
         <span>Already have an account? <a>Log in</a></span>
-
+        <script src="main.js"></script>
     </main>
-    
+
 </body>
 </html>
